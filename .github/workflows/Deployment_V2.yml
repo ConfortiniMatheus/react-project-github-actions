@@ -2,7 +2,7 @@ name: Deployment V2
 on: push
 
 jobs:
-  Lint:
+  Deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Get Code

@@ -16,3 +16,5 @@ jobs:
           echo "Issue User: ${{ github.event.issue.user.login }}"
           echo "Issue Labels: ${{ github.event.issue.labels }}"
           echo "Issue Assignees: ${{ github.event.issue.assignees }}"
+          echo "----------------------------------------------------"
+          echo "${{ toJSON(github.event) }}"

@@ -1,8 +1,9 @@
 name: Issue
-on: issues
-  types: [opened, edited, closed]
+on:
+  issues:
+    types: [opened, edited, closed]
 jobs:
-  New Issue: 
+  New Issue:
     runs-on: ubuntu-latest
     steps:
       - name: Print issue details
